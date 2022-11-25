@@ -56,14 +56,14 @@
 
 <!-- Sobre mi + Skills + Proyects -->
 <article>
-  <div class="container py-3 position-relative">
-    <div class="sobremiborder mb-2">
-      <img class="rounded img-fluid vw-100" src="img/1116x350.png" alt="Imagen relativa del banner">
+  <div class="container py-3 p-3 position-relative" style="color: #FB8B38;">
+    <div class="mb-2">
+      <img class="img-fluid vw-100" src="img/1116x350.png" alt="Imagen relativa del banner" style="border: 3px #FB8B38 solid;">
     </div>
-    <div class="p-3 mb-2 sobremiborder">
-      <img class="rounded-circle" src="img/115x115.png" alt="Imagen sobre mi persona" style="position: absolute; transform: translateY(-100%); border: 3px #ECFF77 solid">
+    <div class="p-3 mb-2">
+      <img class="rounded-circle avatar_pos" src="img/avatartest.png" alt="Imagen sobre mi persona">
       <div class="container-fluid py-5">
-        <div class="btn-edit float-end" style="padding: 15px;" onclick="cambiar_parrafo()">
+        <div class="btn-edit float-end" onclick="cambiar_parrafo()">
           <a href="#" class="btn-right">
             <i class="fa fa-pen"></i>
           </a>
@@ -74,24 +74,24 @@
       <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
     </div>
 
-    <div class="row align-items-md-stretch">
-      <div class="col-md-6">
-        <div class="h-100 p-4 skillsborder">
-          <div class="btn-edit float-end" style="padding: 15px;" onclick="cambiar_parrafo()">
+    <div class="align-items-md-stretch">
+      <div class="p-3 mb-2">
+        <div class="h-100 p-4">
+          <div class="btn-edit float-end" onclick="cambiar_parrafo()">
             <a href="#" class="btn-right">
               <i class="fa fa-pen"></i>
             </a>
           </div>
           <h2 class="animacionescritura fw-bold">Skills</h2>
-          <p class="text-white">Barra de progresos</p>
+          <p class="text-white">Mis habilidades en barra de progreso:</p>
           <h4 class="text-center" style="color: #e34c26;">HTML</h4>
           <div class="progress">
             <div class="progress-bar fw-bold text-white" role="progressbar" aria-label="HTML" style="width: 50%; background-color: #f06529; color: #ebebeb;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-          </div>
+          </div><br/>
           <h4 class="text-center" style="color: #264de4;">CSS</h4>
           <div class="progress">
             <div class="progress-bar fw-bold text-white" role="progressbar" aria-label="HTML" style="width: 50%; background-color: #2965f1; color: #ebebeb;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-          </div>
+          </div><br/>
           <h4 class="text-center" style="color: #F0DB4F;">JavaScript</h4>
           <div class="progress">
             <div class="progress-bar fw-bold" role="progressbar" aria-label="HTML" style="width: 50%; background-color: #F0DB4F; color: #323330;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
@@ -99,9 +99,9 @@
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="h-100 p-4 proyectoborder">
-          <div class="btn-edit float-end" style="padding: 15px;" onclick="cambiar_parrafo()">
+      <div class="p-3 mb-2">
+        <div class="h-100 p-4">
+          <div class="btn-edit float-end" onclick="cambiar_parrafo()">
             <a href="#" class="btn-right">
               <i class="fa fa-pen"></i>
             </a>
@@ -117,8 +117,8 @@
 </main>
 
 <!--  Footer  -->
-  <div class="container" style="position: relative;">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+  <div class="container border-top" style="position: relative;">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
         <div class="col-md-4 d-flex align-items-center">
           <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <i class="fa fa-user fa-xl"></i>
