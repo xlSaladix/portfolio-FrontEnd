@@ -1,16 +1,10 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background: #42275a;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 ::-webkit-scrollbar {display: none;}
@@ -44,10 +38,10 @@ body {
 
 
 /*
- * Header
+ * Barra de navegacion
  */
  .nav-masthead .navbar-brand {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -58,14 +52,12 @@ body {
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, 0.5);
-  border-bottom: .25rem solid transparent;
   text-decoration: none;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
     color: rgb(255, 255, 255);
-    border-bottom-color: rgb(255, 255, 255);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -76,19 +68,8 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
-/* Presentación */
-.container .bienvenidasl {
-  height: 100vh;
-  font-family: 'Baloo Tamma', sans-serif;
-}
 
-.textobienvenida {
-  color: rgb(255, 255, 255);
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.5); 
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0);
-}
-
-/* Fuente */
+/* Animacion de escritura */
 
 .animacionescritura {
   display: block;
@@ -98,7 +79,7 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); 
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0);
 
-  animation: typing 2s steps(8), blink .5s infinite step-end alternate;
+  animation: typing 2s steps(9), blink .5s infinite step-end alternate;
   overflow: hidden;
 }
 
@@ -111,18 +92,55 @@ body {
 }
 
 
-/* particulas */
 
-#particles-js {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  z-index: -1;
+/* Colores e :hover de los iconos de las redes */
+.fa-brands, .fa-user {
+  color: #FB8B38;
 }
 
-/* testing */
+.fa-brands:hover, .fa-user:hover {
+  color: white;
+}
 
+/* Bordes e efecto :hover */
 
-#linkedin, #instagram, #twitter, #me {
-  fill: #fff;
+.proyectoborder {
+  color: #FB8B38; 
+  border-radius: 50px 10px;
+  border: 2px solid #ECFF77;
+  background-color: #37408725;
+}
+
+.skillsborder {
+  color: #FB8B38;
+  border-radius: 10px 50px;
+  border: 2px solid #ECFF77;
+  background-color: #37408725;
+}
+
+.sobremiborder {
+  color: #FB8B38;
+  border-radius: 10px;
+  border: 2px solid #ECFF77;
+  background-color: #37408725;
+}
+
+.sobremiborder:hover, .skillsborder:hover, .proyectoborder:hover {
+  background-color: #7855e32f;
+}
+
+@media (max-width: 767px) {
+  .proyectoborder {
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: transparent;
+  }
+  .skillsborder {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom: transparent;
+  }
 }
